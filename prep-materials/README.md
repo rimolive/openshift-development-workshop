@@ -19,10 +19,13 @@ Download the tools
 ------------------
 * After confirm user register in Red Hat Developers, log in with your new account
 ![Red Hat Developers registration page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/login.png)
+
 * Click on `Downloads`tab
 ![Red Hat Developers registration page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/downloads.png)
+
 * Find the Developer Tools section
 ![Red Hat Developers registration page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/downloads-page.png)
+
 * Next, you will instructions for each Operating System
 
 #### Windows
