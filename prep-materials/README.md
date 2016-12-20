@@ -5,6 +5,9 @@ As the workshop requires a set of tools to begin, it is recommended follow the i
 
 1. Register in Red Hat Developers
 * Access `https://developers.redhat.com` in your browser
+![Red Hat Developers page]()
+
+
 * Click on `Register` link
 * Fill the form with your data. As an alternative, you can use either of your Social accounts to register to the Portal
 * Mark all checkboxes
