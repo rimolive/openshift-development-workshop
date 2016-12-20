@@ -15,4 +15,4 @@ The agenda for the workshop is below:
 * Templating `10 min`
 
 
-[Next: Environment Configuration)[https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/environment-configuration.md]
+[Next: Environment Configuration](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/environment-configuration.md)
