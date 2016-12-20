@@ -20,7 +20,7 @@ There are many ways to contribute with this content, but my suggestions are:
 * Improve the existing content
 * Translate to your native language(Please do it!)
 
-See [CONTRIBUTING.md]() for more information.
+See [CONTRIBUTING.md](https://github.com/rimolive/openshift-development-workshop/tree/master/CONTRIBUTING.md) for more information.
 
 Contact
 -------

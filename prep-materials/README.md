@@ -5,11 +5,12 @@ As the workshop requires a set of tools to begin, it is recommended follow the i
 
 1. Register in Red Hat Developers
 * Access `https://developers.redhat.com` in your browser
-![Red Hat Developers page]()
-
+![Red Hat Developers page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/red-hat-developers.png)
 
 * Click on `Register` link
 * Fill the form with your data. As an alternative, you can use either of your Social accounts to register to the Portal
+![Red Hat Developers registration page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/registering.png)
+
 * Mark all checkboxes
 * Click `Create my Account`
 
