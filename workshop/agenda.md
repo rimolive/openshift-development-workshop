@@ -1,7 +1,7 @@
 Workshop Agenda
 ===============
 
-The agenda for the workshop is below:
+Th proposed agenda for the workshop is below:
 
 * Introduction `10 min`
 * Environment Configuration `5 min`

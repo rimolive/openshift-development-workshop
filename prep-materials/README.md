@@ -23,19 +23,19 @@ Download the tools
 * Click on `Downloads`tab
 ![Red Hat Developers registration page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/downloads.png)
 
-* Find the Developer Tools section
+* Find the `Developer Tools` section
 ![Red Hat Developers registration page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/downloads-page.png)
 
-* Next, you will instructions for each Operating System
+* Next, you will instructions for each Operating System to install the components
 
 #### Windows
-* Download `Red Hat Development Suite`
+* Follow [installation instructions](https://developers.redhat.com/products/cdk/get-started) for `JBoss Developer Suite`
 
 #### Linux
 * Download `Red Hat Container Development Kit` and follow [installation instructions](https://developers.redhat.com/products/cdk/get-started/#fndtn-linux).
-* Download `JBoss Developer Studio`
+* Download `JBoss Developer Studio` and run the follow [installation instructions](https://developers.redhat.com/products/devstudio/get-started).
 
 Clone the reference application
 -------------------------------
-* Install git
-* Clone the kubernetes-lab code in [GitHub website](https://github.com/redhat-developer-demos/kubernetes-lab).
+* Install `git`
+* Fork and clone the kubernetes-lab code in [GitHub website](https://github.com/redhat-developer-demos/kubernetes-lab).
