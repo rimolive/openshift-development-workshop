@@ -13,3 +13,6 @@ The agenda for the workshop is below:
     * Incremental Deployment `10 min`
 * Debugging `10 min`
 * Templating `10 min`
+
+
+[Next: Environment Configuration)[https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/environment-configuration.md]

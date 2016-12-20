@@ -1,4 +1,5 @@
 
+
 * Introduction (10 min)
 * Environment Configuration (5 min)
 * Build
@@ -12,4 +13,4 @@
 
 
 
-[Next: Agenda)[https://github.com/rimolive/openshift-dev-workshop/workshop/agenda.md]
+[Next: Agenda](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/agenda.md)
