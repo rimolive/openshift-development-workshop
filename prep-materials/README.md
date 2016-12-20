@@ -3,7 +3,8 @@ Workshop Preparation Materials
 
 As the workshop requires a set of tools to begin, it is recommended follow the instructions before the workshop. Below you will find the instructions to prepare your environment:
 
-1. Register in Red Hat Developers
+Register in Red Hat Developers
+------------------------------
 * Access `https://developers.redhat.com` in your browser
 ![Red Hat Developers page](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/red-hat-developers.png)
 
@@ -14,7 +15,8 @@ As the workshop requires a set of tools to begin, it is recommended follow the i
 * Mark all checkboxes
 * Click `Create my Account`
 
-2. Download the tools
+Download the tools
+------------------
 * After confirm user register in Red Hat Developers, log in with your new account
 * Click on `Downloads`tab
 
@@ -25,6 +27,7 @@ As the workshop requires a set of tools to begin, it is recommended follow the i
 * Download `Red Hat Container Development Kit` and follow [installation instructions](https://developers.redhat.com/products/cdk/get-started/#fndtn-linux).
 * Download `JBoss Developer Studio`
 
-3. Clone the reference application
+Clone the reference application
+-------------------------------
 * Install git
 * Clone the kubernetes-lab code in [GitHub website](https://github.com/redhat-developer-demos/kubernetes-lab).
