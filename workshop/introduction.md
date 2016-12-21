@@ -7,6 +7,7 @@ This workshop aims developers who wants to develop containerized applications in
 * Do you think there are enough tools to help develop it?
 * What about processes?
 * What do you expect to see in this workshop?
+* What is your hardware configuration? (No, seriously. This is a very important question)
 
 After answering these questions, we can move forward to the next page.
 
