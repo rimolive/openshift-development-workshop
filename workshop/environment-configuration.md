@@ -30,10 +30,15 @@ Lab: Configure kubernetes-lab Git repository
 * Click `Browse...` and point to the location where you cloned kubernetes-lab code.
 * Mark the repository and click `Finish`
 * The repository is added in `Git` perspective. After that, Right-click on the repository and select `Import Maven projects...`
+* Go to `JBoss` perspective
 * Both `helloworld-service` and `guestbook-service` will be added in your workspace.
 
 Since `frontend` is a Node.js application it won't be added as a Maven project, but in case you want to add follow the below steps:
 
-
+* Go back to the `Git` perspective and in the `kubernetes-lab` repository expand the `repo -> Working Tree`
+* Right-click on `frontend` folder and select `Import projects...`
+* In the `Import projects` dialog, make sure the `Import as a general project` option is checked and then click `Next >`
+* Change the project name (or keep it as is if you want) then click `Finish`
+* Go to `JBoss` perspective, the new project will be shown in your workspace
 
 [Next: Build](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/build.md)
