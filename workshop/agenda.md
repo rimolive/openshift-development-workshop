@@ -1,13 +1,13 @@
 Workshop Agenda
 ===============
 
-Th proposed agenda for the workshop is below:
+The proposed agenda for the workshop is below:
 
 * Introduction `10 min`
 * Environment Configuration `5 min`
 * Build
     * Source-To-Image (S2I) `15 min`
-    * Docker (15 min)
+    * Docker `15 min`
     * Jenkins Pipelines `15 min`
 * Deploy
     * Incremental Deployment `10 min`
@@ -15,4 +15,4 @@ Th proposed agenda for the workshop is below:
 * Templating `10 min`
 
 
-[Next: Environment Configuration](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/environment-configuration.md)
+[Next: Introduction](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/introduction.md)
