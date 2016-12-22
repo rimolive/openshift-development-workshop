@@ -6,13 +6,17 @@ Source-To-Image (S2I)
 ---------------------
 * Right-click on your project in `OpenShift Explorer` view and click on `New -> Application...`
 * In the `New OpenShift Application` dialog, search for `nodejs:0.10` Builder image and select it in the list
+![Build 1](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-1.png)
 * Click `Next >`
 * In the `Name` field, put the name of your application to `frontend` (or whatever the name you want)
 * In the `Git Repository URL`, type the name of your kubernetes-lab GitHub fork
 * In the `Git Reference`, type `master`
 * In the `Context Directory`, type `frontend`
+![Build 2](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-2.png)
 * Click `Next >`
+![Build 3](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-3.png)
 * Click `Next >` again
+![Build 4](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-4.png)
 * Click `Next >` again
 * Click `Finish`
 * A `Create Application Summary` dialog will show containing all objects will be created. Simply click `OK`
