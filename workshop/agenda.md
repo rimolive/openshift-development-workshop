@@ -3,14 +3,16 @@ Workshop Agenda
 
 The proposed agenda for the workshop is below:
 
-* Introduction `10 min`
-* Environment Configuration `5 min`
+* Introduction `5 min`
+* Environment Configuration `10 min`
 * Build
-    * Source-To-Image (S2I) `15 min`
-    * Docker `15 min`
-    * Jenkins Pipelines `15 min`
-* Deploy
+    * Source-To-Image (S2I) `10 min`
+    * Docker `10 min`
+    * (Optional) Jenkins Pipelines `15 min`
+    * (Optional) Binary Build `10 min`
+* Deploy `10 min`
     * Incremental Deployment `10 min`
+* Developer Tasks `10 min`
 * Debugging `10 min`
 * Templating `10 min`
 

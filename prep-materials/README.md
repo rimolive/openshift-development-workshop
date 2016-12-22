@@ -35,7 +35,15 @@ Download the tools
 * Download `Red Hat Container Development Kit` and follow [installation instructions](https://developers.redhat.com/products/cdk/get-started/#fndtn-linux).
 * Download `JBoss Developer Studio` and run the follow [installation instructions](https://developers.redhat.com/products/devstudio/get-started).
 
+Install OpenShift Client Tools
+------------------------------
+Follow the [Installing the CLI](https://docs.openshift.com/container-platform/3.3/cli_reference/get_started_cli.html#installing-the-cli) section in the [OpenShift docs](https://docs.openshift.com/container-platform/3.3).
+
 Clone the reference application
 -------------------------------
 * Install `git`
 * Fork and clone the kubernetes-lab code in [GitHub website](https://github.com/redhat-developer-demos/kubernetes-lab).
+
+What's Next?
+------------
+After following all preparation steps, we are ready to do through the [Workshop Labs](https://github.com/rimolive/openshift-development-workshop/tree/master/workshop)
