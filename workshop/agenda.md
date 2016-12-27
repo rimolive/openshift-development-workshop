@@ -1,6 +1,5 @@
 Workshop Agenda
 ===============
-
 The proposed agenda for the workshop is below:
 
 * Introduction `5 min`

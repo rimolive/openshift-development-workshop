@@ -1,6 +1,6 @@
 Deploy
 ======
-Now we have the `frontent` application up and running, we will publish the `guestbook-service` microservice. Since it contains a custom process to build the code, we will first build it locally and then add the image to our OpenShift internal registry before deploy in our project.
+Now we have the `frontend` application up and running, we will publish the `guestbook-service` microservice. Since it contains a custom process to build the code, we will first build it locally and then add the image to our OpenShift internal registry before deploy in our project.
 
 Building the `guestbook-service` application
 --------------------------------------------
@@ -88,5 +88,15 @@ Lab: Deploy the MySQL template
     * `guestbook` in the `MariaDB Connection Password` field
     * `guestbook` in the `MariaDB Database Name` field
 * Click `Create`
+
+Lab: Configuring `guestbook-service` Datasource
+-----------------------------------------------
+* In the `Openshift Explorer` view, right-click on `guestbook-service` appliation and select `Manage Environment Variables...` menu
+* In the dialog, Click on `Add...` button
+* In the `Add Environment Variable` dialog, fill in with the following information:
+    * `JDBC_URL` in the `Name`field
+    * `jdbc:mysql://<MYSQL_SERVICE_IP>:3306/sampledb` in the `Value` field
+* Click `OK`
+* Do the same for `DATASOURCE_USERNAME` and `DATASOURCE_PASSWORD` env vars.
 
 [Next: Developer Tasks](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/developer-tasks.md)

@@ -8,4 +8,4 @@ Além disso, você verá que há mais de uma opção para realizar as mesma tare
 
 Por último mas não menos importante, envie feedbacks e abra issues enquanto segue os laboratórios para que possamos discutir abertamente o conteúdo desde workshop, afim de melhorar ainda mais a qualidade.
 
-[Próximo: Agenda](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/pt-RB/agenda.md)
+[Próximo: Agenda](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/pt-BR/agenda.md)

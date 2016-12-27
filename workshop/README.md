@@ -1,6 +1,5 @@
 Workshop Material
 =================
-
 This workshop helps developers with OpenShift and application development.
 
 This content is created based on a self-paced training model, where students can follow the labs by themselves and ask questions to the instructor. That way, for those who can easily peform the labs steps quickly don't need to wait for everyone to finish. The main pupose is make this Workshop simulate an environment where you need to interact with the tools and because of that the labs were created to be as more productive as possible.

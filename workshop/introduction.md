@@ -1,6 +1,5 @@
 Introduction
 ============
-
 This workshop aims developers who wants to develop containerized applications in order to run in OpenShift. Having this in mind, let's make a simple introduction by answering the following questions:
 
 * What are the challenges involved in create containerized applications?

@@ -19,4 +19,4 @@ A seguir veremos a agenda proposta:
 * Template `15 min`
 
 
-[Próximo: Introduction](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/pt-BR/introduction.md)
+[Próximo: Introdução](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/pt-BR/introduction.md)

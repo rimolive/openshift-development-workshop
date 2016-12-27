@@ -9,8 +9,10 @@ Open an issue with the content you think it should be improved or would like to 
 Translation
 -----------
 To add a translation, follow the steps below:
-* In the `prep-materials` directory, create s subdir containing the ISO Name of the language (I am creating a Brazilian Portuguese translation so I'm using pt-BR)
+* In the `prep-materials` directory, create s subdir containing the ISO Name of the language (I am creating a Brazilian Portuguese translation so I'm using `pt-BR`)
 * Do the same in `workshop` directory
 * Copy the contents in its respectively directories.
 * Make sure the links point to the translated version.
 * Translate the content. =D
+
+Don't forget to add the links to the translated content in the [Translated versions](https://github.com/rimolive/openshift-development-workshop#translated-versions) section of the README.md file.

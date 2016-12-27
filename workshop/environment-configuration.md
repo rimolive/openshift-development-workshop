@@ -6,7 +6,7 @@ Lab: Configuring CDK in JBoss Developer Studio
 * Open `JBoss Developer Studio` (`JBoss Developer Suite` for Windows users). You will see the main page of Red Hat Central in the first time you open the IDE.
 ![JBoss Developer Studio](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/jbdevstudio.png)
 
-* Below the IDE you will find the `Servers` tab. Click on it then Right-Click on the blank view and select `New -> Server`
+* Below the IDE you will find the `Servers` view. Right-Click on the blank view and select `New -> Server`
 * In the `New Server` window, find the `Red Hat Container Development Kit` server and click `Next >`
 ![CDK](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/cdk.png)
 

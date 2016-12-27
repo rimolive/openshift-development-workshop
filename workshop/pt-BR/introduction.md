@@ -1,5 +1,5 @@
-Introduction
-============
+Introdução
+==========
 Este workshop tem como foco desenvolvedores que querem desenvolver aplicações em containers para rodar no OpenShift. Tendo isto em mente, vamos fazer uma pequena introdução respondendo às seguintes perguntas:
 
 * Quais são os desafios envolvidos em criar aplicações em containers?
