@@ -17,7 +17,7 @@ Source-To-Image (S2I)
 ![Build 3](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-3.png)
 * Click `Next >` again
 ![Build 4](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-4.png)
-* Click `Next >` again
+* Click `Next >` again^2
 * Click `Finish`
 * A `Create Application Summary` dialog will show containing all objects will be created. Simply click `OK`
 * In the `OpenShift Explorer` view, a new application is created and a build is already started
