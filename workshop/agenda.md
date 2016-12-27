@@ -11,10 +11,13 @@ The proposed agenda for the workshop is below:
     * (Optional) Jenkins Pipelines `15 min`
     * (Optional) Binary Build `10 min`
 * Deploy `10 min`
-    * Incremental Deployment `10 min`
 * Developer Tasks `10 min`
-* Debugging `10 min`
-* Templating `10 min`
+    * Scale
+    * Application Logs
+    * Application Terminal
+    * Incremental Deployment
+* Debugging `5 min`
+* Templating `15 min`
 
 
 [Next: Introduction](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/introduction.md)

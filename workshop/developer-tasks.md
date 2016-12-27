@@ -1,6 +1,6 @@
 Developer Tasks
 ===============
-The next labs will be quick but it will be very valuable while coding your applications. There you can find ways to troubleshoot for potential problems you might find in your applications running on OpenShift.
+The next labs will be quick but it will be very valuable while coding your applications in OpenShift. There you can find ways to troubleshoot for potential problems you might find in your applications running on OpenShift.
 
 Scaling the application
 -----------------------
