@@ -4,25 +4,26 @@ Now we have the `frontent` application up and running, we will publish the `gues
 
 Building the `guestbook-service` application
 --------------------------------------------
-From the Terminal, you can set all Environment Variables needed to
+From the Terminal, you can set all Environment Variables needed to connect to Docker process inside CDK with the following command:
 ```
 $ eval "$(vagrant service-manager env docker)"
 ```
-
+After that, just run the command below to list all images in the CDK instance:
 ```
 $ docker --tlscacert=$DOCKER_CERT_PATH/ca.pem \
          --tlscert=$DOCKER_CERT_PATH/cert.pem \
          --tlskey=$DOCKER_CERT_PATH/key.pem images
 ```
-
+If it return a list of images, then it worked! Now let's build the `guestbook-service` application
 ```
 $ cd $GIT_REPO/guestbook-service
-$ ./builddocker.sh $REGISTRY_URL/sample-project/guestbook-service:1.0
+$ mvn clean package; $REGISTRY_URL/sample-project/guestbook-service
 ```
-
+At last, push the docker image to CDK Internal Docker Registry:
 ```
-$ docker push $REGISTRY_URL/sample-project/guestbook-service:1.0
+$ docker push $REGISTRY_URL/sample-project/guestbook-service
 ```
+If it returns `Authentication required`, then you need to login to docker process. Follow the [Accessing the Internal Registry](https://docs.openshift.com/container-platform/3.3/dev_guide/managing_images.html#accessing-the-internal-registry) section in the Openshift documentation. you need to ssh to your CDK instance to do it, just run `vagrant ssh` in the $CDK_HOME/components/rhel/rhel-ose directory.
 
 Alternative option to build `guestbook-service` application
 -----------------------------------------------------------
@@ -74,7 +75,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException:
 ```
 Oops! This REST Service uses MySQL as the Database and we don't have any instance running. We need to deploy a MySQL application.
 
-For the purpose of this next lab, we will use a [template](https://raw.githubusercontent.com/openshift/openshift-ansible/master/roles/openshift_examples/files/examples/v1.4/db-templates/mariadb-ephemeral-template.json) and will add in the OpenShift Web Console. Follow the next lab to deploy the MySQL instance.
+For the purpose of this next lab, we will use a [template](https://raw.githubusercontent.com/openshift/openshift-ansible/master/roles/openshift_examples/files/examples/v1.4/db-templates/mariadb-ephemeral-template.json) that will add in the OpenShift Web Console. Follow the next lab to deploy the MySQL instance.
 
 Lab: Deploy the MySQL template
 ------------------------------
@@ -98,5 +99,8 @@ Lab: Configuring `guestbook-service` Datasource
     * `jdbc:mysql://<MYSQL_SERVICE_IP>:3306/sampledb` in the `Value` field
 * Click `OK`
 * Do the same for `DATASOURCE_USERNAME` and `DATASOURCE_PASSWORD` env vars.
+* Click `Finish`
+
+After that, a new deployment will be triggered passing the new Environment Variables. Access `frontend` application URL again and check if an item is shown in the list. You can add new values but an error message will still show because the `helloworld-service` microservice is not available. Because of lack of time, this workshop won't guide you through the deployment of this app but you can try by yourself following the same steps as in `guestbook-service` with the exception of Datasource configuration (this microservice doesn't use databases).
 
 [Next: Developer Tasks](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/developer-tasks.md)
