@@ -12,6 +12,12 @@ Below you find the important links to guide you through this workshop:
 * [Preparation Materials](https://github.com/rimolive/openshift-development-workshop/tree/master/prep-materials)
 * [Workshop Labs](https://github.com/rimolive/openshift-development-workshop/tree/master/workshop)
 
+Translated versions
+-------------------
+
+* Portuguese Brazilian: [Prep Materials](https://github.com/rimolive/openshift-development-workshop/tree/master/prep-materials/pt-BR) [Workshop Labs](https://github.com/rimolive/openshift-development-workshop/tree/master/workshop/pt-BR)
+
+
 How can I contribute?
 ---------------------
 There are many ways to contribute with this content, but my suggestions are:

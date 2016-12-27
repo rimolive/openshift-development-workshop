@@ -5,7 +5,7 @@ This workshop aims developers who wants to develop containerized applications in
 
 * What are the challenges involved in create containerized applications?
 * Do you think there are enough tools to help develop it?
-* What about processes?
+* What about processes? Architectures?
 * What do you expect to see in this workshop?
 * What is your hardware configuration? (No, seriously. This is a very important question)
 
