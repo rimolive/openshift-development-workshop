@@ -6,17 +6,25 @@ Source-To-Image (S2I)
 ---------------------
 * Right-click on your project in `OpenShift Explorer` view and click on `New -> Application...`
 * In the `New OpenShift Application` dialog, search for `nodejs:0.10` Builder image and select it in the list
+
 ![Build 1](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-1.png)
+
 * Click `Next >`
 * In the `Name` field, put the name of your application to `frontend` (or whatever the name you want)
 * In the `Git Repository URL`, type the name of your kubernetes-lab GitHub fork
 * In the `Git Reference`, type `master`
 * In the `Context Directory`, type `frontend`
+
 ![Build 2](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-2.png)
+
 * Click `Next >`
+
 ![Build 3](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-3.png)
+
 * Click `Next >` again
+
 ![Build 4](https://raw.githubusercontent.com/rimolive/openshift-development-workshop/master/images/build-4.png)
+
 * Click `Next >` again^2
 * Click `Finish`
 * A `Create Application Summary` dialog will show containing all objects will be created. Simply click `OK`
@@ -25,7 +33,7 @@ Source-To-Image (S2I)
 * The `Console` view will be shown and will log all S2I progress.
 * After you see the message `Push successful' in the Build log, go back to the `OpenShift Explorer` view. You will see that the build disappeared and a Pod is listed in the application
 * Right-click the application and select `Show In -> Web Browser`. The internal Eclipse browser will show and the application will be available in the URL `http://frontend-sample-project.rhel-cdk.10.1.2.2.xip.io/`
-* When you access the application, you will see the following message:
+* When you access the application, you will see the following message alert:
 ```
 Error reading the messages. Please check the logs for more details.
 ```
@@ -73,11 +81,80 @@ Docker build
 * A new build is triggered. Go back to `OpenShift Explorer`, expand the application, right-click the build and select `Build Log...`
 * Check for the logs to successfuly complete the build
 
+The following labs are optional because it contains Experimental features in Opensfhit and/or things that you do only in very specific situations. Unless you have enough time to do these labs, move on to them.
+
 (Optional) Jenkins Pipelines
 ----------------------------
+
+Before begin this lab, you must use the [latest version](https://raw.githubusercontent.com/openshift/openshift-ansible/master/roles/openshift_examples/files/examples/v1.4/quickstart-templates/jenkins-ephemeral-template.json) of the Jenkins Ephemeral template. CDK is still using the outdated version. Also, we need to add a `edit` rolebinding to the jenkins serviceacount so it can create the pipelines.
+
+To update the template run the following commands:
+
+```bash
+$ oc login -u admin -p admin
+$ oc create -f https://raw.githubusercontent.com/openshift/openshift-ansible/master/roles/openshift_examples/files/examples/v1.4/quickstart-templates/jenkins-ephemeral-template.json -n openshift
+$ oc adm policy add-role-to-user edit system:serviceaccount:sample-project:jenkins -n sample-project
+$ oc login -u openshift-dev -p devel
+```
+
+After that, follow the steps below:
+
+* Run the following command to create a JSON file containing the BuildConfig object with Jenkins Pipeline configuration:
+
+```bash
+$ cat > frontend-pipeline.json<<EOF
+{
+    "kind": "BuildConfig",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "frontend-pipeline"
+    },
+    "spec": {
+        "triggers": [
+            {
+                "type": "GitHub",
+                "github": {
+                    "secret": "secret101"
+                }
+            },
+            {
+                "type": "Generic",
+                "generic": {
+                    "secret": "secret101"
+                }
+            }
+        ],
+        "runPolicy": "Serial",
+        "strategy": {
+            "type": "JenkinsPipeline",
+            "jenkinsPipelineStrategy": {
+                "jenkinsfile": "node('maven') { \n  stage 'build\n          openshiftBuild(buildConfig: 'frontend', showBuildLogs: 'true')\\\n  stage 'deploy'\n          openshiftDeploy(deploymentConfig: 'frontend')\n}"
+            }
+        }
+    }
+}
+EOF
+```
+* A file called `frontend-pipeline.json` is created. After that, create the buildconfig object with the command below:
+
+```bash
+$ oc create -f frontend-pipeline.json
+```
+
+* Access [https://10.1.2.2:8443/console/project/sample-project/browse/pipelines/sample-pipeline](https://10.1.2.2:8443/console/project/sample-project/browse/pipelines/sample-pipeline). The Pipelines view page is shown.
+* Click on `Start Pipeline` button.
+* See the progress.
+* Alternatively, you can follow the pipeline progress directly on jenkins by clicking on `View Log` link.
 
 (Optional) Binary Build
 -----------------------
 
+Now we will try our last Build lab: The binary. You can reuse the buildconfig already created by openshift. All you need is run the command below to trigger a binary build for `frontend`:
+
+```bash
+$ oc start-build bc/frontend --from-dir=.
+```
+
+You will see in the build logs the git clone step being skipped.
 
 [Next: Deploy](https://github.com/rimolive/openshift-development-workshop/blob/master/workshop/deploy.md)
