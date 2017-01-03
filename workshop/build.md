@@ -149,7 +149,7 @@ $ oc create -f frontend-pipeline.json
 (Optional) Binary Build
 -----------------------
 
-Now we will try our last Build lab: The binary. You can reuse the buildconfig already created by openshift. All you need is run the command below to trigger a binary build for `frontend`:
+Now we will try our last Build lab: The binary. You can reuse the buildconfig already created by openshift. All you need is run the command below to trigger a binary build for `frontend`(assuming the current dir is the frontline source):
 
 ```bash
 $ oc start-build bc/frontend --from-dir=.
