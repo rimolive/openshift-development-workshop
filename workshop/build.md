@@ -128,7 +128,7 @@ $ cat > frontend-pipeline.json<<EOF
         "strategy": {
             "type": "JenkinsPipeline",
             "jenkinsPipelineStrategy": {
-                "jenkinsfile": "node('maven') { \n  stage 'build\n          openshiftBuild(buildConfig: 'frontend', showBuildLogs: 'true')\\\n  stage 'deploy'\n          openshiftDeploy(deploymentConfig: 'frontend')\n}"
+                "jenkinsfile": "node('maven') { \n  stage 'build'\n          openshiftBuild(buildConfig: 'frontend', showBuildLogs: 'true')\n  stage 'deploy'\n          openshiftDeploy(deploymentConfig: 'frontend')\n}"
             }
         }
     }
@@ -141,7 +141,7 @@ EOF
 $ oc create -f frontend-pipeline.json
 ```
 
-* Access [https://10.1.2.2:8443/console/project/sample-project/browse/pipelines/sample-pipeline](https://10.1.2.2:8443/console/project/sample-project/browse/pipelines/sample-pipeline). The Pipelines view page is shown.
+* Access [https://10.1.2.2:8443/console/project/sample-project/browse/pipelines/frontend-pipeline](https://10.1.2.2:8443/console/project/sample-project/browse/pipelines/frontend-pipeline). The Pipelines view page is shown.
 * Click on `Start Pipeline` button.
 * See the progress.
 * Alternatively, you can follow the pipeline progress directly on jenkins by clicking on `View Log` link.
