@@ -7,7 +7,7 @@ This workshop was created for [DevConf.cz 2016](https://devconf.cz/) to bring De
 
 Most documents, links, trainings, etc. are all focused on sysadmins, which brought me this challenge to compile this content for all developers who wants to know how to get your hands dirty in OpenShift.
 
-Below you find the important links to guide you through this workshop:
+Below you find the important links to guide you through this workshop (specially the **Preparation Materials** link):
 
 * [Preparation Materials](https://github.com/rimolive/openshift-development-workshop/tree/master/prep-materials)
 * [Workshop Labs](https://github.com/rimolive/openshift-development-workshop/tree/master/workshop)
@@ -30,3 +30,5 @@ See [CONTRIBUTING.md](https://github.com/rimolive/openshift-development-workshop
 
 Contact
 -------
+
+You can contact me at my e-mail: ricardo.martinelli.oliveira@gmail.com, or you can open an issue and I'll be notified.
