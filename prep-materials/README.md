@@ -29,11 +29,11 @@ Download the tools
 * Next, you will instructions for each Operating System to install the components
 
 #### Windows
-* Follow [installation instructions](https://developers.redhat.com/products/cdk/get-started) for `JBoss Developer Suite`
+* Follow [installation instructions](https://developers.redhat.com/products/devsuite/hello-world/) for `JBoss Developer Suite`
 
 #### Linux
-* Download `Red Hat Container Development Kit` and follow [installation instructions](https://developers.redhat.com/products/cdk/get-started/#fndtn-linux).
-* Download `JBoss Developer Studio` and run the follow [installation instructions](https://developers.redhat.com/products/devstudio/get-started).
+* Download `Red Hat Container Development Kit` and follow [installation instructions](https://developers.redhat.com/products/cdk/hello-world/).
+* Download `JBoss Developer Studio` and run the follow [installation instructions](https://developers.redhat.com/products/devstudio/hello-world/).
 
 Install OpenShift Client Tools
 ------------------------------
